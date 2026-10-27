@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <h2>Menghitung Luas Persegi</h2>
+
+    <label for="sisi">Panjang sisi:</label>
+    <input type="number" id="sisi">
+
+    <button onclick="hitungLuas()">Hitung</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function hitungLuas() {
+            let sisi = Number(
+                document.getElementById("sisi").value
+            );
+
+            let luas = sisi * sisi;
+
+            document.getElementById("hasil").innerHTML =
+                "Luas persegi = " + luas;
+        }
+    </script>
+</body>
+<body>
+    <h2>Menghitung Luas Persegi Panjang</h2>
+
+    <label for="panjang">Panjang:</label>
+    <input type="number" id="panjang">
+
+    <label for="lebar">Lebar:</label>
+    <input type="number" id="lebar">
+
+    <button onclick="hitungLuasPersegiPanjang()">Hitung</button>
+
+    <p id="hasilPersegiPanjang"></p>
+
+    <script>
+        function hitungLuasPersegiPanjang() {
+            let panjang = Number(
+                document.getElementById("panjang").value
+            );
+            let lebar = Number(
+                document.getElementById("lebar").value
+            );
+
+            let luas = panjang * lebar;
+
+            document.getElementById("hasilPersegiPanjang").innerHTML =
+                "Luas persegi panjang = " + luas;
+        }
+    </script>
+    <body>
+         <h2>Belajar JavaScript</h2>
+
+    <p id="pesan">Halo, Mahasiswa Informatika!</p>
+
+    <button onclick="ubahTeks()">
+        Klik Saya
+    </button>
+
+    <script>
+        function ubahTeks() {
+            document.getElementById("pesan").innerHTML =
+                "Saya berhasil belajar JavaScript!";
+        }
+    </script>
+    </body>
+    <body>
+    
+    </body>
+</html>
